@@ -6,3 +6,14 @@
 </ul>
 <div w3-include-html="/include/contentblocks/block01.html"></div>
 <p>As páginas, ou melhor o conteúdo singular de cada página, pode incorporar o conteúdo singular de uma página ou de um artigo. Para cada página ou artigo é construído um template. Um template para cada página ou artigo? Uau!! Pode ser um copy/parte ou cada artigo e cada página pode ter um template único.</p>
+<p>O template pode ficar na raíz do sítio Web e a página na diretoria contentpages. Embora não seja preciso, mas no futuro nunca se sabe se a opção vai ser útil, podemos separar os artigos na diretoria contentarticles. Na mesma linha também podemos colocar na raíz templates para páginas e templates para artigos com o prefixo respetivo de page... e article...</p>
+
+<p>Assim, a estrutura a 09 de junho de 2019 está assim definida:</p>
+
+<ul>
+    <li>diretoria contentpages: contém conteúdo das páginas</li>
+    <li>diretoria contentarticles: contém conteúdo dos artigos</li>
+    <li>diretoria js: contém apenas o javascript que incorpora a "transclusão" dos excertos de HTML</li>
+</ul>
+
+<p>nota: principal desvantagem: sem javascript ativo, o sistema não funciona. Todas as ferramentas de validação que analisam o código fonte não funcionam - apenas aquelas que funcionam com pós-processamento do browser.</p>
