@@ -379,3 +379,158 @@
 
 
 </div>
+
+
+<script type="text/javascript">
+<!--
+var LEMmode='group';
+var LEMgseq=0;
+function ExprMgr_process_relevance_and_tailoring(evt_type,sgqa,type){
+if (typeof LEM_initialized == 'undefined') {
+LEM_initialized=true;
+LEMsetTabIndexes();
+}
+if (evt_type == 'onchange' && (typeof last_sgqa !== 'undefined' && sgqa==last_sgqa) && (typeof last_evt_type !== 'undefined' && last_evt_type == 'TAB' && type != 'checkbox')) {
+  last_evt_type='onchange';
+  last_sgqa=sgqa;
+  return;
+}
+last_evt_type = evt_type;
+last_sgqa=sgqa;
+  relChange24133=false;
+  relChange24134=false;
+  relChange24135=false;
+  relChange24136=false;
+  relChange24138=false;
+  relChange24137=false;
+  relChangeG0=false;
+  LEMrel24136(sgqa);
+  LEMrel24138(sgqa);
+
+}
+function LEMrel24136(sgqa){
+  var UsesVars = '  ';
+  if(relChangeG0){
+    ;
+  }
+  else  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if (1)
+{
+  LEMval24136(sgqa);
+  relChange24136=true;
+  $('#relevance24136').val('1');
+}
+$('#relevance24136').val('1');  // always true
+}
+
+function LEMrel24138(sgqa){
+  var UsesVars = '  ';
+  if(relChangeG0){
+    ;
+  }
+  else  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if (1)
+{
+  LEMval24138(sgqa);
+  relChange24138=true;
+  $('#relevance24138').val('1');
+}
+$('#relevance24138').val('1');  // always true
+}
+function LEMval24136(sgqa){
+  isValidSum24136=true;
+  isValidOther24136=true;
+  isValidOtherComment24136=true;
+
+  if(((1))){
+    $('#vmsg_24136_default').removeClass('error').addClass('good').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_24136_default').removeClass('good').addClass('error').trigger('classChangeError');
+    isValidOther24136=false;
+  }
+
+  if(isValidSum24136){
+    $('#totalvalue_24136').removeClass('error').addClass('good').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_24136').removeClass('good').addClass('error').trigger('classChangeError');
+  }
+
+  if(isValidOtherComment24136){
+    $('#othertext478445X798X').addClass('em_sq_validation').removeClass('error').addClass('good').trigger('classChangeGood');
+  }
+  else {
+    $('#othertext478445X798X').addClass('em_sq_validation').removeClass('good').addClass('error').trigger('classChangeError');
+  }
+}
+
+function LEMval24138(sgqa){
+  isValidSum24138=true;
+  isValidOther24138=true;
+  isValidOtherComment24138=true;
+
+  if(((1))){
+    $('#vmsg_24138_default').removeClass('error').addClass('good').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_24138_default').removeClass('good').addClass('error').trigger('classChangeError');
+    isValidOther24138=false;
+  }
+
+  if(isValidSum24138){
+    $('#totalvalue_24138').removeClass('error').addClass('good').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_24138').removeClass('good').addClass('error').trigger('classChangeError');
+  }
+
+  if(isValidOtherComment24138){
+    $('#othertext478445X798X').addClass('em_sq_validation').removeClass('error').addClass('good').trigger('classChangeGood');
+  }
+  else {
+    $('#othertext478445X798X').addClass('em_sq_validation').removeClass('good').addClass('error').trigger('classChangeError');
+  }
+}
+//-->
+</script>
+<input type="hidden" id="relevance24133" name="relevance24133" value="1">
+<input type="hidden" id="relevance24134" name="relevance24134" value="1">
+<input type="hidden" id="relevance24135" name="relevance24135" value="1">
+<input type="hidden" id="relevance24136" name="relevance24136" value="1">
+<input type="hidden" id="relevance24138" name="relevance24138" value="1">
+<input type="hidden" id="relevance24137" name="relevance24137" value="1">
+<input type="hidden" id="relevanceG0" name="relevanceG0" value="1">
+<input type="hidden" id="aQuestionsWithDependencies" data-qids="[]">
+
+<!-- PRESENT THE NAVIGATOR -->
+<!-- Navigator hidden-xs-->
+<div class="col-xs-12">
+    <div class="row" id="navigator-container">
+        <div class="col-xs-12 save-all hidden">
+            <button type="submit" id="loadallbtn" value="loadall" name="loadall" class="saveall btn btn-default col-xs-12 col-sm-4 submit button hidden">Carregar inquérito não terminado</button><button type="submit" id="saveallbtn" value="saveall" name="saveall" class="saveall btn btn-default col-xs-12 col-sm-4 submit button hidden">Continuar mais tarde</button>
+            <button type="submit" id="clearall" value="clearall" name="clearall" class="clearall button  btn btn-default btn-lg  col-xs-4 hidden" data-confirmedby="confirm-clearall" title="Esta ação necessita de confirmação">Sair e limpar inquérito</button><input id="confirm-clearall" value="confirm" class="hide jshide  btn btn-default btn-lg  col-xs-4" type="checkbox" name="confirm-clearall"><label class="hide jshide  btn btn-default btn-lg  col-xs-4" for="confirm-clearall">Tem a certeza de que quer eliminar todas as suas respostas?</label>
+        </div>
+        <div class="col-xs-12 save-all">
+            <hr>
+        </div>
+        <div class="col-xs-6 save-all text-left">
+            
+        </div>
+        <div class="col-xs-6 save-all text-right">
+            <button type="submit" id="movesubmitbtn" value="movesubmit" name="movesubmit" accesskey="l" class="submit button btn btn-lg  btn-primary">Enviar</button>
+        </div>
+    </div>
+</div>
+
+<!-- generated in SurveyRuntimeHelper --><input type="hidden" name="thisstep" value="1" id="thisstep">
+<input type="hidden" name="sid" value="478445" id="sid">
+<input type="hidden" name="start_time" value="1562690089" id="start_time">
+<input type="hidden" name="LEMpostKey" value="852004427" id="LEMpostKey">
+</form>
