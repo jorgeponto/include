@@ -7,10 +7,15 @@
 
 <body>
   
-  <header jo-include-html="common/header-pages.html"></header>
-  <main jo-include-html="contentpages/formulario.html"></main>
-  <footer jo-include-html="common/footer.html"></footer>
-
+  	<form id="limesurvey" name="limesurvey" autocomplete="off" class="survey-form-container  surveyRunTime" action="https://testes.questionarios.ama.pt/index.php/478445" method="post">
+		<input type="hidden" value="dHRCQk5vME8zNWhaX2xqVlc5V2gxa3gxdlFMMGVVNzRBcJgwbx7diLN8NtbanQh6-9m60avm-JV1zJcAuXxOzw==" name="YII_CSRF_TOKEN">
+		<!-- INPUT NAMES -->
+        <input type="hidden" name="fieldnames" value="478445X798X24133|478445X798X24134|478445X798X24135|478445X798X24136|478445X798X24138|478445X798X24137" id="fieldnames">
+        <button type="submit" id="defaultbtn" value="default" name="move" class="submit noview" style="display:none">default</button><!-- Survey Description survey.pstpl -->
+        <noscript role="alert" id="checkjavascript">&lt;p class='alert alert-danger warningjs'&gt;Atenção: A execução de JavaScript está desativada no seu navegador. Poderá não conseguir responder a todas as perguntas deste inquérito. Por favor, verifique os parâmetros do seu navegador.&lt;/p&gt;</noscript>
+  
+  <main jo-include-html="contentpages/formulario.html"></main>      
+  
 <script>includeHTML();</script>
 
 </body>
